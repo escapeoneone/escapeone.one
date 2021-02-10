@@ -15,7 +15,7 @@ export default function Home() {
 
       <div className={styles["main"]}>
         <h1 className={styles["title-text"]}>Hi! I'm escapeoneone</h1>
-        <h5 className={styles["subtitle-text"]}>I is a TypeScript, React programmer</h5>
+        <h5 className={styles["subtitle-text"]}>I am a TypeScript, React programmer</h5>
         <div className={styles["button"]}>
           <HeaderItem text="Check my projects" href="projects"></HeaderItem>
         </div>
