@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from "../components/Header";
+import HeaderItem from "../components/HeaderItem";
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
       <div className={styles["main"]}>
         <h1 className={styles["title-text"]}>Hi! I'm escapeoneone</h1>
         <h5 className={styles["subtitle-text"]}>I is a TypeScript, React programmer</h5>
-        <div className="intro-button-wrapper">
-          <button className="button">VIEW MY WORKS</button></div>
+        <div className={styles["button"]}>
+          <HeaderItem text="Check my projects" href="projects"></HeaderItem>
+        </div>
       </div>
 
     </div>
