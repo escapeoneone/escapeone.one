@@ -7,7 +7,7 @@ export default function Header() {
                 <a className={styles["header-logo"]} href="/">escapeoneone.</a>
             </nav>
             <nav>
-                <a className={styles["header-menu-item"]} href="/skills">Skills</a>
+                <a className={styles["header-menu-item"]} href="/projects">Projects</a>
             </nav>
 
         </header>
