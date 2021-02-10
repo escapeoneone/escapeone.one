@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    padding: calc(.028169 * 100% + 26px) calc(.0563 * 100% + 12px) 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo-nav{
+    display: flex;
+    grid-column-gap: 65px;
+    column-gap: 65px;
+}
+.header-logo{
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    outline-width: 0px !important;
+    user-select: auto !important;
+    font-family: "FiraCodeMedium";
+}
+
+.header-menu-item{
+    padding: 5px;
+    background: white;
+    font-family: "FiraCodeMedium";
+}
