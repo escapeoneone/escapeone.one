@@ -1,3 +1,20 @@
-body{
-  background-color: black;
+.main{
+  display: flex;
+  padding: calc(.1056338028 * 100% + 37px) calc(.0563 * 100% + 12px) 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-text{
+  font-size: calc(.0352113 * 100vw + 32px);
+  color: #fbfbfb;
+  margin: 0 0 3px;
+  font-weight: 800;
+}
+.subtitle-text{
+  font-size: calc(.0063380281 * 100vw + 15px);
+  color: #929292;
+  margin: 0;
+  font-weight: 500;
 }

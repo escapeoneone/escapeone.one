@@ -1,4 +1,5 @@
 import styles from "./Header.module.css";
+import HeaderItem from "./HeaderItem";
 
 export default function Header() {
     return (<>
@@ -7,7 +8,7 @@ export default function Header() {
                 <a className={styles["header-logo"]} href="/">escapeoneone.</a>
             </nav>
             <nav>
-                <a className={styles["header-menu-item"]} href="/projects">Projects</a>
+                <HeaderItem href="projects" text="My projects"></HeaderItem>
             </nav>
 
         </header>
