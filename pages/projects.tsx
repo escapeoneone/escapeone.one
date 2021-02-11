@@ -22,6 +22,7 @@ export default function Projects() {
             web="https://escapeone.one"
             description="My awesome web site!"
             ></Project>
+            
             <Project 
             name="Electik"
             github="bisma-company/electik"
