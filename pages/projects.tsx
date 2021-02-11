@@ -22,12 +22,11 @@ export default function Projects() {
             web="https://escapeone.one"
             description="My awesome web site!"
             ></Project>
-            
+
             <Project 
             name="Electik"
             github="bisma-company/electik"
-            web="https://escapeone.one"
-            description="Open-source Web Browser!\nMade by bisma"
+            description="Open-source Web Browser!\n The project was made by the bisma team"
             ></Project>
 
         </div>
