@@ -1,6 +1,10 @@
-import styles from "./Header.module.css";
+import stylesHome from '../styles/Home.module.css'
 import Head from 'next/head';
 import Header from "../components/Header";
+import styles from "../styles/Projects.module.css";
+import HeaderItem from "../components/HeaderItem";
+import Project from "../components/Project";
+
 
 export default function Projects() {
     return (<>
@@ -10,5 +14,11 @@ export default function Projects() {
         </Head>
 
         <Header />
+
+        <div className={[stylesHome["main"], styles["main"]].join(" ")}>
+            <Project></Project>
+            <HeaderItem text="Home" href=""></HeaderItem>
+            <HeaderItem text="Home" href=""></HeaderItem>
+        </div>
     </>)
 }
