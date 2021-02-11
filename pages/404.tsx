@@ -4,6 +4,7 @@ import HeaderItem from "../components/HeaderItem";
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import styles404 from '../styles/404.module.css'
+import { Typewriter } from 'react-typewriting-effect'
 
 export default function FourOhFour() {
     return <>
@@ -16,11 +17,11 @@ export default function FourOhFour() {
 
         <div className={styles["main"]}>
             <div style={{background: "white"}}>
-                <h1 className={styles["title-text"] + " " + styles404["title"]}>404</h1>
+                <Typewriter string='404' className={styles["title-text"] + " " + styles404["title"]} delay={80} stopBlinkinOnComplete={true} />
             </div>
-            <h5 className={styles["subtitle-text"] + " " + styles404["subtitle"]}>Sorry, server not found this page</h5>
+            <Typewriter string='Sorry, the server has not found that page' className={styles["subtitle-text"] + " " + styles404["subtitle"]} delay={80} />
             <div className={styles["button"]}>
-                <HeaderItem text="Home" className="rainbow-animated" href=""></HeaderItem>
+                <HeaderItem text="Home" href=""></HeaderItem>
             </div>
         </div>
     </>
