@@ -23,12 +23,14 @@ export default function Projects() {
             description="My awesome web site!"
             ></Project>
 
-            <Project 
+        </div>
+    </>)
+}
+
+/*
+            <Project
             name="Electik"
             github="bisma-company/electik"
             description="Open-source Web Browser!\n The project was made by the bisma team"
             ></Project>
-
-        </div>
-    </>)
-}
+*/
