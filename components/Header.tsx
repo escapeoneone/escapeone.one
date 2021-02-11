@@ -7,10 +7,12 @@ export default function Header() {
         <header className={styles.header}>
             <nav className={styles["header-logo-nav"]}>
                 <Link href="/">
-                    <a className={styles["header-logo"]}>escapeoneone.</a>
+                    <a className={styles["header-logo"]}>escapeoneone</a>
                 </Link>
             </nav>
             <nav>
+                <HeaderItem href="dorepl" text="dorepl"></HeaderItem>
+                <HeaderItem href="blog" text="Blog"></HeaderItem>
                 <HeaderItem href="projects" text="My projects"></HeaderItem>
             </nav>
 
