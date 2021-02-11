@@ -5,7 +5,6 @@ import styles from "../styles/Projects.module.css";
 import HeaderItem from "../components/HeaderItem";
 import Project from "../components/Project";
 
-
 export default function Projects() {
     return (<>
         <Head>
@@ -16,9 +15,20 @@ export default function Projects() {
         <Header />
 
         <div className={[stylesHome["main"], styles["main"]].join(" ")}>
-            <Project></Project>
-            <HeaderItem text="Home" href=""></HeaderItem>
-            <HeaderItem text="Home" href=""></HeaderItem>
+
+            <Project 
+            name="escapeone.one"
+            github="escapeoneone/escapeone.one"
+            web="https://escapeone.one"
+            description="My awesome web site!"
+            ></Project>
+            <Project 
+            name="Electik"
+            github="bisma-company/electik"
+            web="https://escapeone.one"
+            description="Open-source Web Browser!\nMade by bisma"
+            ></Project>
+
         </div>
     </>)
 }

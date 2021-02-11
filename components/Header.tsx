@@ -11,9 +11,8 @@ export default function Header() {
                 </Link>
             </nav>
             <nav className={styles["nav"]}>
-                <HeaderItem href="dorepl" text="dorepl"></HeaderItem>
-                <HeaderItem href="blog" text="Blog"></HeaderItem>
-                <HeaderItem href="projects" text="My projects"></HeaderItem>
+                <HeaderItem /*href="blog"*/ text="Blog (not work)"></HeaderItem>
+                <HeaderItem href="projects" text="Projects"></HeaderItem>
             </nav>
 
         </header>

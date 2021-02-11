@@ -5,29 +5,43 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import styles from "./Project.module.css"
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WebIcon from '@material-ui/icons/Web';
 
-export default function FourOhFour() {
+interface ProjectProps {
+    name: string;
+    github?: string;
+    web?: string;
+    description: string;
+}
+
+export default function FourOhFour(props: ProjectProps) {
     return <>
         <Card>
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                    Word of the Day
-        </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography color="textPrimary" gutterBottom>
+                    {props.name}
                 </Typography>
-                <Typography color="textSecondary">
-                    adjective
-        </Typography>
+
                 <Typography variant="body2" component="p">
-                    well meaning and kindly.
-          <br />
-                    {'"a benevolent smile"'}
+                    {props.description.split("\\n").join("  ")}
                 </Typography>
             </CardContent>
             <CardActions className={styles["actions"]}>
-                <a><GitHubIcon></GitHubIcon></a>
-                <Button size="small">Learn More</Button>
+                {props.github != undefined &&
+                    <a href={"https://github.com/" + props.github}>
+                        <GitHubIcon className={styles["icon"]} /> 
+                    </a>
+                }
+
+                {props.web != undefined &&
+                    <a href={props.web}>
+                        <WebIcon className={styles["icon"]} /> 
+                    </a>
+                }
+
+                
             </CardActions>
         </Card>
     </>
 }
+/*<Button size="small">Learn More</Button>*/
