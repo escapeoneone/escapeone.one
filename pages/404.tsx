@@ -17,9 +17,9 @@ export default function FourOhFour() {
 
         <div className={styles["main"]}>
             <div style={{background: "white"}}>
-                <Typewriter string='404' className={styles["title-text"] + " " + styles404["title"]} delay={80} stopBlinkinOnComplete={true} />
+                <Typewriter string='404' className={styles["title-text"] + " " + styles404["title"]} delay={80} onComplete={() => {}} stopBlinkinOnComplete={true} />
             </div>
-            <Typewriter string='Sorry, the server has not found that page' className={styles["subtitle-text"] + " " + styles404["subtitle"]} delay={80} />
+            <Typewriter string='Sorry, the server has not found that page' onComplete={() => {}} className={styles["subtitle-text"] + " " + styles404["subtitle"]} delay={80} />
             <div className={styles["button"]}>
                 <HeaderItem text="Home" href=""></HeaderItem>
             </div>
