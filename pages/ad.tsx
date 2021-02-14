@@ -9,7 +9,6 @@ export default function Home() {
       <Head>
         <title>Ads | escapeone.one</title>
         <link rel="icon" href="/favicon.png" />
-        <script data-ad-client="ca-pub-3624282771754825" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
 
       <Header />
