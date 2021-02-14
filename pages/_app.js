@@ -2,7 +2,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return <>
-  <div dangerouslySetInnerHTML={`
+  <div dangerouslySetInnerHTML={{__html: `
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-54K6D9WN1F"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
      });
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/72405547" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->`}></div>
+  <!-- /Yandex.Metrika counter -->`}}></div>
     <script data-ad-client="ca-pub-3624282771754825" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <Component {...pageProps} />
   </>
